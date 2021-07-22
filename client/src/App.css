@@ -1,0 +1,156 @@
+.app {
+  background-color: #737373;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  width: 100%;
+  
+      };
+
+
+.header-title {
+  background-color: #F1F1F1;
+  text-align: center;
+
+}
+
+.form {
+  width: 50%;
+  object-position: center;
+}
+
+.form-input {
+  width: 50%;
+  margin: 10px 0px;
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border:rgb(95, 95, 95);
+  border-width: 3px;
+outline: 3px;
+margin-left: 30%;
+}
+
+.form-input input, .form-input textarea {
+  width: 75%;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  border: 3px solid lightgray;
+  padding: .375rem .75rem;
+  outline: none;
+  
+}
+
+select {
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  width: 40%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: 30%;
+  }
+
+
+
+button {
+  background-color: #00A7CB;
+  color: #fff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  cursor: pointer;
+  outline: none;
+  margin-left: 30%
+}
+
+.blog-post__display {
+  border: 1px solid lightgrey;
+  margin: 5px 0px;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 30%
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(95, 95, 95);
+  opacity: 1; /* Firefox */
+}
+
+.lbl {
+  text-align:center;
+}
+
+.nav-item {
+  color: #fff;
+  
+}
+
+.navbar-brand {
+  padding-left: 15px;
+}
+
+.nav-header {
+  padding-top: 20px;
+ display: inline-flex;
+}
+
+.formHeader{
+  color:#fff;
+  margin-left: 40%;
+  
+}
+
+.header1{
+  color:#fff;
+  margin-left: 30%;
+  
+}
+
+.red-bg{
+  text-align: center;
+background-color: red;
+}
+
+.green-bg{
+  text-align: center;
+  background-color: seagreen;
+}
+
+.search1 {
+  text-align: center;
+  color: #fff;
+}
+
+.search2{
+  margin-left: 5%;
+  color: #fff;
+}
+
+.searchbg{
+  background-color: #737373;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  width: 100%;
+  background-size: cover;
+  
+}
+.searchcomp{
+  color: #fff;
+}
+
+ul{
+  list-style-type: none;
+  color:#fff;
+  background-color:rgb(41, 41, 41);
+}
