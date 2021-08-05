@@ -3,7 +3,7 @@ import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router} from 'react-router-dom';
 import swal from 'sweetalert';
-
+import CompanyLogo from './logo.png'
 
 
 
@@ -228,6 +228,8 @@ onButtonCLickHandler = () => {
  
       {/* inputs for payload to be sent to DB */}
       <div className="app">
+        <img className="photo" src= {CompanyLogo}></img>
+    
      
         <h1 className="header1">Please fill out form below</h1>
         <br></br>
@@ -366,10 +368,10 @@ onButtonCLickHandler = () => {
             />
           </div>
          <div style={{clear:"left"}}>
+         <br></br>
+          <br></br>
 <h3 className="formHeader" >Please Select Status</h3>
-
-
-        <label style= {{marginLeft:"30%", color:"white"}}>Select Status of MOU</label>
+        <label className="inputHeader">Select Status of MOU</label>
           <div id= 'mou'>
           <div className="select-Container">
             <select name="mou" value={this.state.mou} onChange={this.handleChange}>
@@ -380,7 +382,7 @@ onButtonCLickHandler = () => {
           </div>
         </div>
 
-        <label style= {{marginLeft:"30%", color:"white"}}>Select Status of NDA</label>
+        <label className="inputHeader">Select Status of NDA</label>
         <div id= 'NDA'>
           <div className="select-Container">
             <select name="nda" value={this.state.nda} onChange={this.handleChange}>
@@ -391,7 +393,7 @@ onButtonCLickHandler = () => {
           </div>
         </div>
 
-        <label style= {{marginLeft:"30%", color:"white"}}>Select Status of IP</label>
+        <label className="inputHeader">Select Status of IP</label>
         <div id= 'ipADD'>
           <div className="select-Container">
             <select name="ipADD" value={this.state.ipADD} onChange={this.handleChange}>
@@ -402,7 +404,9 @@ onButtonCLickHandler = () => {
           </div>
        
 <br></br>
-<label style= {{marginLeft:"30%", color:"white"}}>Date the cycle was submitted</label>
+<br></br>
+<br></br>
+<h3 className="formHeader1">Date the cycle was submitted</h3>
         <div className="form-input">
             <input 
               type="date"
@@ -432,7 +436,9 @@ onButtonCLickHandler = () => {
               onChange={this.handleChange}
             />
           </div>
-          <label style= {{marginLeft:"30%", color:"white"}}>Select Phase </label>
+          <br></br>
+          <br></br>
+          <label className="inputHeader">Select Phase </label>
         <div id= 'phaseType'>
           <div className="select-Container">
             <select name="phaseType" value={this.state.phaseType} onChange={this.handleChange}>
@@ -456,6 +462,7 @@ onButtonCLickHandler = () => {
           </div>
         </div>
 </div>
+<br></br>
           <button onClick={this.onButtonCLickHandler} >Submit</button>
         </form>
         

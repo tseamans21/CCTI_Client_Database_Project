@@ -5,6 +5,7 @@ import axios from 'axios';
 // import Select from "react-dropdown-select";
 
 import './App.css';
+import CompanyLogo from './logo.png'
 
 // Below is a list of options for the hard coded dropdown menus: 
 const mouOptions = [
@@ -504,12 +505,13 @@ class Search extends React.Component {
       <div id="queryResults">
         <h3 className="search2">Your data here: </h3>
         <br></br>
-        <ul>
+        <ul className="ulclass">
           {this.displayQuery(this.state, this.state.posts)}
 
         </ul>
       </div>
-
+      <br></br>
+              <img className="photo" src={CompanyLogo}/>
       </div>
 
       

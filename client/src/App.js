@@ -11,7 +11,8 @@ import './App.css';
 //functions or classes need to render pages
 import Form from './form';
 import Search from './Search';
-
+import Update from './update';
+import Footer from './Components/Footer';
 
 
 class App extends React.Component {
@@ -24,7 +25,9 @@ render() {
     <Switch>
               <Route exact path='/' component={Form}></Route>
               <Route exact path='/Search' component={Search}></Route>
+              <Route exact path='/update' component={Update}></Route>
             </Switch>
+            <Footer />
     </Router>
     
   </div>
